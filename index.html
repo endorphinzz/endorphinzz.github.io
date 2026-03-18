@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -367,7 +367,7 @@
     });
 
     const langBtn = document.getElementById('langToggle');
-    let currentLang = localStorage.getItem('lang') || 'en';
+    let currentLang = 'en';
     applyLang(currentLang);
 
     langBtn.addEventListener('click', () => {
