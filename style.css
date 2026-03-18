@@ -196,6 +196,18 @@ a:hover {
   text-decoration: none;
 }
 
+.email-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .about-content {
   background: var(--color-bg);
   border-radius: var(--radius);
