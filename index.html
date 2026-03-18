@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,12 +15,16 @@
     <div class="nav-container">
       <a href="#" class="nav-brand">Yuhang Wang</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
+        <li><a href="#about"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+        <li><a href="#news"><span class="lang-en">News</span><span class="lang-zh">动态</span></a></li>
+        <li><a href="#publications"><span class="lang-en">Publications</span><span class="lang-zh">论文</span></a></li>
+        <li><a href="#projects"><span class="lang-en">Projects</span><span class="lang-zh">项目</span></a></li>
+        <li><a href="#awards"><span class="lang-en">Awards</span><span class="lang-zh">荣誉</span></a></li>
       </ul>
+      <button class="lang-toggle" id="langToggle" title="切换中文 / Switch to English">
+        <span class="lang-en">中文</span>
+        <span class="lang-zh">EN</span>
+      </button>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
@@ -36,8 +40,14 @@
         </div>
         <div class="profile-info">
           <h1>Yuhang Wang <span class="name-cn">（王宇航）, Zhouzhou </span></h1>
-          <p class="profile-title">Incoming PhD Student at Tsinghua University (SIGS)</p>
-          <p class="profile-subtitle">B.S. at Southwest University</p>
+          <p class="profile-title">
+            <span class="lang-en">Incoming PhD Student at Tsinghua University (SIGS)</span>
+            <span class="lang-zh">清华大学深圳国际研究生院 直博生（即将入学）</span>
+          </p>
+          <p class="profile-subtitle">
+            <span class="lang-en">B.S. at Southwest University</span>
+            <span class="lang-zh">西南大学 软件工程 本科</span>
+          </p>
           <div class="profile-links">
             <span class="email-text"><i class="fas fa-envelope"></i> wyh20030323@email.swu.edu.cn</span>
           </div>
@@ -45,41 +55,71 @@
       </div>
 
       <div class="about-content">
-        <h2><img src="photo/icon.jpg" alt="icon" class="icon-heading" /> About Me</h2>
-        <p>
-          I am an incoming PhD student at
-          <a href="https://www.sigs.tsinghua.edu.cn/" target="_blank">Tsinghua University Shenzhen International Graduate School (SIGS)</a>,
-          majoring in Computer Science and Technology.Currently, the areas I am exploring include: Large Language Models Safety and LLM4 IoT_security.
-          I will soon receive my Bachelor's degree (2022–2026) in Software Engineering from
-          <a href="https://www.swu.edu.cn/" target="_blank">Southwest University.</a>
-        </p>
-        <p>
-          My research interests mainly include:
-        </p>
-        <ul class="research-interests">
-          <li><strong>Large Language Models Safety:</strong> LLMs jailbreak attacks and defenses.</li>
-          <li><strong>Multimodal LLMs:</strong> Code Generation.</li>
-          <li><strong>Data Mining:</strong> User Behavior Modeling, Smart Homes, 3D Scene Understanding.</li>
-        </ul>
+        <h2><img src="photo/icon.jpg" alt="icon" class="icon-heading" />
+          <span class="lang-en">About Me</span>
+          <span class="lang-zh">关于我</span>
+        </h2>
+        <div class="lang-en">
+          <p>
+            I am an incoming PhD student at
+            <a href="https://www.sigs.tsinghua.edu.cn/" target="_blank">Tsinghua University Shenzhen International Graduate School (SIGS)</a>,
+            majoring in Computer Science and Technology. Currently, the areas I am exploring include: Large Language Models Safety and LLM4 IoT_security.
+            I will soon receive my Bachelor's degree (2022–2026) in Software Engineering from
+            <a href="https://www.swu.edu.cn/" target="_blank">Southwest University.</a>
+          </p>
+          <p>My research interests mainly include:</p>
+          <ul class="research-interests">
+            <li><strong>Large Language Models Safety:</strong> LLMs jailbreak attacks and defenses.</li>
+            <li><strong>Multimodal LLMs:</strong> Code Generation.</li>
+            <li><strong>Data Mining:</strong> User Behavior Modeling, Smart Homes, 3D Scene Understanding.</li>
+          </ul>
+        </div>
+        <div class="lang-zh">
+          <p>
+            我即将进入<a href="https://www.sigs.tsinghua.edu.cn/" target="_blank">清华大学深圳国际研究生院</a>攻读计算机科学与技术博士学位。目前我正在探索的研究方向包括：大语言模型安全和LLM4 IoT安全。
+            我将于2026年获得<a href="https://www.swu.edu.cn/" target="_blank">西南大学</a>软件工程学士学位。
+          </p>
+          <p>我的研究兴趣主要包括：</p>
+          <ul class="research-interests">
+            <li><strong>大语言模型安全：</strong>LLM越狱攻击与防御。</li>
+            <li><strong>多模态大语言模型：</strong>代码生成。</li>
+            <li><strong>数据挖掘：</strong>用户行为建模、智能家居、3D场景理解。</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="section">
-      <h2><i class="fas fa-university"></i> Education</h2>
+      <h2><i class="fas fa-university"></i>
+        <span class="lang-en">Education</span>
+        <span class="lang-zh">教育背景</span>
+      </h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-date">2026 – </div>
           <div class="timeline-content">
-            <h3>Tsinghua University, SIGS</h3>
-            <p>PhD in Computer Science and Technology (Incoming)</p>
+            <h3>
+              <span class="lang-en">Tsinghua University, SIGS</span>
+              <span class="lang-zh">清华大学深圳国际研究生院</span>
+            </h3>
+            <p>
+              <span class="lang-en">PhD in Computer Science and Technology (Incoming)</span>
+              <span class="lang-zh">计算机科学与技术 博士（即将入学）</span>
+            </p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-date">2022 – 2026</div>
           <div class="timeline-content">
-            <h3>Southwest University</h3>
-            <p>B.S. in Software Engineering</p>
+            <h3>
+              <span class="lang-en">Southwest University</span>
+              <span class="lang-zh">西南大学</span>
+            </h3>
+            <p>
+              <span class="lang-en">B.S. in Software Engineering</span>
+              <span class="lang-zh">软件工程 本科</span>
+            </p>
             <p class="detail">Top 3.2%</p>
           </div>
         </div>
@@ -88,38 +128,50 @@
 
     <!-- News Section -->
     <section id="news" class="section">
-      <h2><i class="fas fa-fire"></i> News</h2>
+      <h2><i class="fas fa-fire"></i>
+        <span class="lang-en">News</span>
+        <span class="lang-zh">最新动态</span>
+      </h2>
       <ul class="news-list">
         <li>
           <span class="news-date">[2025.11]</span>
-          SmartGen (co-author) got accepted by <strong>SIGKDD 2026</strong>!
+          <span class="lang-en">SmartGen (co-author) got accepted by <strong>SIGKDD 2026</strong>!</span>
+          <span class="lang-zh">SmartGen（合作作者）被 <strong>SIGKDD 2026</strong> 录用！</span>
         </li>
         <li>
           <span class="news-date">[2025.9]</span>
-          Admitted to <strong>Tsinghua University SIGS</strong> for PhD (Recommended Admission / 推免直博)!
+          <span class="lang-en">Admitted to <strong>Tsinghua University SIGS</strong> for PhD (Recommended Admission / 推免直博)!</span>
+          <span class="lang-zh">推免直博至<strong>清华大学深圳国际研究生院</strong>！</span>
         </li>
         <li>
           <span class="news-date">[2025.8]</span>
-          SlideCoder (co-author) got accepted by <strong>EMNLP 2025</strong> as oral presentation!
+          <span class="lang-en">SlideCoder (co-author) got accepted by <strong>EMNLP 2025</strong> as oral presentation!</span>
+          <span class="lang-zh">SlideCoder（合作作者）被 <strong>EMNLP 2025</strong> 录用为口头报告！</span>
         </li>
         <li>
           <span class="news-date">[2025.8]</span>
-          Interaction2Code (co-author) got accepted by <strong>ASE 2025</strong> (9.5%)!
+          <span class="lang-en">Interaction2Code (co-author) got accepted by <strong>ASE 2025</strong> (9.5%)!</span>
+          <span class="lang-zh">Interaction2Code（合作作者）被 <strong>ASE 2025</strong> 录用（录取率9.5%）！</span>
         </li>
         <li>
           <span class="news-date">[2025.5]</span>
-          QueryAttack (co-author) got accepted by <strong>ACL 2025</strong>!
+          <span class="lang-en">QueryAttack (co-author) got accepted by <strong>ACL 2025</strong>!</span>
+          <span class="lang-zh">QueryAttack（合作作者）被 <strong>ACL 2025</strong> 录用！</span>
         </li>
         <li>
           <span class="news-date">[2025.4]</span>
-          Open-World 3D Scene Understanding (co-author) got accepted by <strong>ICMR 2025</strong>!
+          <span class="lang-en">Open-World 3D Scene Understanding (co-author) got accepted by <strong>ICMR 2025</strong>!</span>
+          <span class="lang-zh">Open-World 3D Scene Understanding（合作作者）被 <strong>ICMR 2025</strong> 录用！</span>
         </li>
       </ul>
     </section>
 
-    <!-- Publications Section -->
+    <!-- Publications Section (no translation) -->
     <section id="publications" class="section">
-      <h2><i class="fas fa-file-alt"></i> Publications</h2>
+      <h2><i class="fas fa-file-alt"></i>
+        <span class="lang-en">Publications</span>
+        <span class="lang-zh">学术论文</span>
+      </h2>
       <p class="pub-note"><strong>*</strong> denotes equal contribution.</p>
 
       <h3 class="pub-year">2026</h3>
@@ -166,7 +218,7 @@
         </li>
         <li>
           <div class="pub-title">Open-World 3D Scene Understanding with Cross-Modal Dual Consistency Learning (DCL-OW3D)</div>
-          <div class="pub-authors">Xian-Feng Han, Chuyu Wang, <span class="pub-me">Yuhang Wang</span>,Mingjie Wang.</div>
+          <div class="pub-authors">Xian-Feng Han, Chuyu Wang, <span class="pub-me">Yuhang Wang</span>, Mingjie Wang.</div>
           <div class="pub-venue">ACM International Conference on Multimedia Retrieval (<strong>ICMR 2025</strong>) [<strong>CCF-B</strong>] [Student First Author]</div>
           <div class="pub-links">
             <a href="https://www.semanticscholar.org/paper/Open-World-3D-Scene-Understanding-with-Cross-Modal-Han-Wang/476ce11af1aa3fb7a683a7b14469bf89c1dde66e" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
@@ -177,33 +229,66 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-      <h2><i class="fas fa-laptop-code"></i> Projects &amp; Competitions</h2>
+      <h2><i class="fas fa-laptop-code"></i>
+        <span class="lang-en">Projects &amp; Competitions</span>
+        <span class="lang-zh">项目与竞赛</span>
+      </h2>
       <div class="project-list">
         <div class="project-item">
           <div class="project-header">
-            <h3>IoT Smart Agriculture Management System</h3>
-            <span class="project-badge">National 3rd Prize / Chongqing 1st Prize</span>
+            <h3>
+              <span class="lang-en">IoT Smart Agriculture Management System</span>
+              <span class="lang-zh">IoT 智慧农业管理系统</span>
+            </h3>
+            <span class="project-badge">
+              <span class="lang-en">National 3rd Prize / Chongqing 1st Prize</span>
+              <span class="lang-zh">国家级三等奖 / 重庆市一等奖</span>
+            </span>
           </div>
-          <p class="project-date">2025.03 – 2025.04 | Chinasoft International Project Internship</p>
-          <p>Built a full-stack smart agriculture system with real-time data visualization, scalable device control, and AI4IoT modules. Served as <strong>team leader</strong> overseeing the entire development lifecycle.</p>
+          <p class="project-date">
+            <span class="lang-en">2025.03 – 2025.04 | Chinasoft International Project Internship</span>
+            <span class="lang-zh">2025.03 – 2025.04 | 中软国际项目实习</span>
+          </p>
+          <p>
+            <span class="lang-en">Built a full-stack smart agriculture system with real-time data visualization, scalable device control, and AI4IoT modules. Served as <strong>team leader</strong> overseeing the entire development lifecycle.</span>
+            <span class="lang-zh">构建了一个具有实时数据可视化、设备规模化控制和 AI4IoT 模块的全栈智慧农业系统。作为<strong>项目组长</strong>参与全流程开发。</span>
+          </p>
           <p class="project-tech"><strong>Tech stack:</strong> WeChat Mini Program, Python + FastAPI, LangChain, MQTT, C++ (HiBurn), WebSocket</p>
         </div>
         <div class="project-item">
           <div class="project-header">
-            <h3>AI-Powered Military Wargame Board Generation</h3>
-            <span class="project-badge">National Innovation Project</span>
+            <h3>
+              <span class="lang-en">AI-Powered Military Wargame Board Generation</span>
+              <span class="lang-zh">基于扩散模型和文本驱动的智能兵棋沙盘生成</span>
+            </h3>
+            <span class="project-badge">
+              <span class="lang-en">National Innovation Project</span>
+              <span class="lang-zh">国家级大创项目</span>
+            </span>
           </div>
           <p class="project-date">2024.08 – Present</p>
-          <p>Designed an end-to-end text-to-2D wargame board generation pipeline using Stable Diffusion. First work to achieve text-to-wargame-board 2D image generation.</p>
+          <p>
+            <span class="lang-en">Designed an end-to-end text-to-2D wargame board generation pipeline using Stable Diffusion. First work to achieve text-to-wargame-board 2D image generation.</span>
+            <span class="lang-zh">采用 Stable Diffusion 设计了端到端的文本到兵棋沙盘 2D 图像生成流程，首次实现了文本至兵棋沙盘 2D 图像的端到端生成。</span>
+          </p>
           <p class="project-tech"><strong>Tech stack:</strong> Stable Diffusion, Python, Deep Learning</p>
         </div>
         <div class="project-item">
           <div class="project-header">
-            <h3>National College Student Intelligent Vehicle Competition</h3>
-            <span class="project-badge">National 2nd Prize / Chongqing 1st Prize</span>
+            <h3>
+              <span class="lang-en">National College Student Intelligent Vehicle Competition</span>
+              <span class="lang-zh">全国大学生智能汽车竞赛</span>
+            </h3>
+            <span class="project-badge">
+              <span class="lang-en">National 2nd Prize / Chongqing 1st Prize</span>
+              <span class="lang-zh">国家级二等奖 / 重庆市一等奖</span>
+            </span>
           </div>
           <p class="project-date">2023.12</p>
-          <p>Built a CV + LLM-based intelligent delivery vehicle for the "last-mile" delivery problem. Responsible for chassis design, battery selection, and LLM integration.</p>
+          <p>
+            <span class="lang-en">Built a CV + LLM-based intelligent delivery vehicle for the "last-mile" delivery problem. Responsible for chassis design, battery selection, and LLM integration.</span>
+            <span class="lang-zh">基于 CV 和 LLM 构建了"最后一公里"智能配送车，负责底盘结构设计、电池选择和大语言模型嵌入等主要工作。</span>
+          </p>
           <p class="project-tech"><strong>Tech stack:</strong> Computer Vision, LLM, Embedded Systems</p>
         </div>
       </div>
@@ -211,24 +296,53 @@
 
     <!-- Awards Section -->
     <section id="awards" class="section">
-      <h2><i class="fas fa-star"></i> Selected Awards &amp; Honors</h2>
+      <h2><i class="fas fa-star"></i>
+        <span class="lang-en">Selected Awards &amp; Honors</span>
+        <span class="lang-zh">获奖与荣誉</span>
+      </h2>
       <div class="awards-grid">
         <div class="award-category">
-          <h3><i class="fas fa-medal"></i> Scholarships</h3>
+          <h3><i class="fas fa-medal"></i>
+            <span class="lang-en">Scholarships</span>
+            <span class="lang-zh">奖学金</span>
+          </h3>
           <ul>
-            <li><strong>National Scholarship</strong>, Ministry of Education of China (2 times)</li>
-            <li>Grateful for Chinese Modern Scientists Scholarship (感恩中国近现代科学家奖学金)</li>
-            <li>Southwest University First-class Scholarship</li>
+            <li>
+              <span class="lang-en"><strong>National Scholarship</strong>, Ministry of Education of China (2 times)</span>
+              <span class="lang-zh"><strong>国家奖学金</strong>（2次）</span>
+            </li>
+            <li>
+              <span class="lang-en">Grateful for Chinese Modern Scientists Scholarship</span>
+              <span class="lang-zh">感恩中国近现代科学家奖学金</span>
+            </li>
+            <li>
+              <span class="lang-en">Southwest University First-class Scholarship</span>
+              <span class="lang-zh">西南大学一等奖学金</span>
+            </li>
           </ul>
         </div>
         <div class="award-category">
-          <h3><i class="fas fa-trophy"></i> Honors</h3>
+          <h3><i class="fas fa-trophy"></i>
+            <span class="lang-en">Honors</span>
+            <span class="lang-zh">荣誉称号</span>
+          </h3>
           <ul>
-            <li><strong>Chongqing Spiritual Civilization Advanced Individual</strong> (重庆市精神文明先进个人)</li>
-            <li>Southwest University Merit Student (三好学生)</li>
-            <li>SWU Academic Excellence Award (学习优秀奖)</li>
-            <li>SWU Overseas Study Award (国(境)外研学奖)</li>
-
+            <li>
+              <span class="lang-en"><strong>Chongqing Spiritual Civilization Advanced Individual</strong></span>
+              <span class="lang-zh"><strong>重庆市精神文明先进个人</strong></span>
+            </li>
+            <li>
+              <span class="lang-en">Southwest University Merit Student</span>
+              <span class="lang-zh">西南大学三好学生</span>
+            </li>
+            <li>
+              <span class="lang-en">SWU Academic Excellence Award</span>
+              <span class="lang-zh">学习优秀奖</span>
+            </li>
+            <li>
+              <span class="lang-en">SWU Overseas Study Award</span>
+              <span class="lang-zh">国(境)外研学奖</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -236,20 +350,35 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>Last updated: March 2026</p>
+      <p>
+        <span class="lang-en">Last updated: March 2026</span>
+        <span class="lang-zh">最后更新：2026年3月</span>
+      </p>
       <p>&copy; 2026 Yuhang Wang. Powered by GitHub Pages.</p>
     </footer>
   </main>
 
   <script>
-    const toggle = document.querySelector('.nav-toggle');
+    const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('show'));
     });
+
+    const langBtn = document.getElementById('langToggle');
+    let currentLang = localStorage.getItem('lang') || 'en';
+    applyLang(currentLang);
+
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'zh' : 'en';
+      localStorage.setItem('lang', currentLang);
+      applyLang(currentLang);
+    });
+
+    function applyLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+    }
   </script>
 </body>
 </html>

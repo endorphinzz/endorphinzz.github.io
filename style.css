@@ -47,6 +47,36 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ===== Language Toggle ===== */
+.lang-zh {
+  display: none;
+}
+
+html[data-lang="zh"] .lang-en {
+  display: none;
+}
+
+html[data-lang="zh"] .lang-zh {
+  display: inline;
+}
+
+html[data-lang="zh"] .about-content > .lang-en,
+html[data-lang="zh"] .about-content > .lang-zh {
+  display: none;
+}
+
+html[data-lang="zh"] .about-content > .lang-zh {
+  display: block;
+}
+
+.about-content > .lang-en {
+  display: block;
+}
+
+.about-content > .lang-zh {
+  display: none;
+}
+
 /* ===== Navbar ===== */
 .navbar {
   position: fixed;
@@ -92,6 +122,25 @@ a:hover {
 .nav-links a:hover {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.lang-toggle {
+  padding: 4px 14px;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 16px;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.lang-toggle:hover {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .nav-toggle {
