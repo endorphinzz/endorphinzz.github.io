@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuhang Wang - Personal Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">Yuhang Wang</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Profile Section -->
+    <section id="about" class="profile-section">
+      <div class="profile-card">
+        <div class="profile-photo">
+          <img src="photo/photo.png" alt="Yuhang Wang" />
+        </div>
+        <div class="profile-info">
+          <h1>Yuhang Wang <span class="name-cn">（王宇航）, Zhouzhou </span></h1>
+          <p class="profile-title">Incoming PhD Student at Tsinghua University (SIGS)</p>
+          <p class="profile-subtitle">B.S. at Southwest University</p>
+          <div class="profile-links">
+            <a href="mailto:wyh20030323@email.swu.edu.cn" title="Email"><i class="fas fa-envelope"></i> Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2><img src="photo/icon.jpg" alt="icon" class="icon-heading" /> About Me</h2>
+        <p>
+          I am an incoming PhD student at
+          <a href="https://www.sigs.tsinghua.edu.cn/" target="_blank">Tsinghua University Shenzhen International Graduate School (SIGS)</a>,
+          majoring in Computer Science and Technology.Currently, the areas I am exploring include: Large Language Models Safety and LLM4 IoT_security.
+          I will soon receive my Bachelor's degree (2022–2026) in Software Engineering from
+          <a href="https://www.swu.edu.cn/" target="_blank">Southwest University.</a>
+        </p>
+        <p>
+          My research interests mainly include:
+        </p>
+        <ul class="research-interests">
+          <li><strong>Large Language Models Safety:</strong> LLMs jailbreak attacks and defenses.</li>
+          <li><strong>Multimodal LLMs:</strong> Code Generation.</li>
+          <li><strong>Data Mining:</strong> User Behavior Modeling, Smart Homes, 3D Scene Understanding.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2><i class="fas fa-university"></i> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2026 – </div>
+          <div class="timeline-content">
+            <h3>Tsinghua University, SIGS</h3>
+            <p>PhD in Computer Science and Technology (Incoming)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2022 – 2026</div>
+          <div class="timeline-content">
+            <h3>Southwest University</h3>
+            <p>B.S. in Software Engineering</p>
+            <p class="detail">Top 3.2%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+      <h2><i class="fas fa-fire"></i> News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">[2025.11]</span>
+          SmartGen (co-author) got accepted by <strong>SIGKDD 2026</strong>!
+        </li>
+        <li>
+          <span class="news-date">[2025.9]</span>
+          Admitted to <strong>Tsinghua University SIGS</strong> for PhD (Recommended Admission / 推免直博)!
+        </li>
+        <li>
+          <span class="news-date">[2025.8]</span>
+          SlideCoder (co-author) got accepted by <strong>EMNLP 2025</strong> as oral presentation!
+        </li>
+        <li>
+          <span class="news-date">[2025.8]</span>
+          Interaction2Code (co-author) got accepted by <strong>ASE 2025</strong> (9.5%)!
+        </li>
+        <li>
+          <span class="news-date">[2025.5]</span>
+          QueryAttack (co-author) got accepted by <strong>ACL 2025</strong>!
+        </li>
+        <li>
+          <span class="news-date">[2025.4]</span>
+          Open-World 3D Scene Understanding (co-author) got accepted by <strong>ICMR 2025</strong>!
+        </li>
+      </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+      <h2><i class="fas fa-file-alt"></i> Publications</h2>
+      <p class="pub-note"><strong>*</strong> denotes equal contribution.</p>
+
+      <h3 class="pub-year">2026</h3>
+      <ol class="pub-list">
+        <li>
+          <div class="pub-title">SmartGen: Synthesizing Context-Aware User Behavior Data for Adaptive Smart Home Intelligence</div>
+          <div class="pub-authors">Zhiyao Xu, Dan Zhao, Qingsong Zou, Qing Li, Yong Jiang, <span class="pub-me">Yuhang Wang</span>, Jingyu Xiao.</div>
+          <div class="pub-venue">ACM International Conference on Knowledge Discovery and Data Mining (<strong>SIGKDD 2026</strong>) [<strong>CCF-A</strong>]</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2508.03484" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="https://github.com/horizonsinzqs/SmartGen" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="pub-year">2025</h3>
+      <ol class="pub-list">
+        <li>
+          <div class="pub-title">Making Them a Malicious Database: Exploiting Query Code to Jailbreak Aligned Large Language Models (QueryAttack)</div>
+          <div class="pub-authors">Qingsong Zou, Jingyu Xiao, Qing Li, Zhi Yan, <span class="pub-me">Yuhang Wang</span>, Li Xu, Wenxuan Wang, Kuofeng Gao, Ruoyu Li, Yong Jiang.</div>
+          <div class="pub-venue">Findings of the 63rd Annual Meeting of the Association for Computational Linguistics (<strong>ACL 2025</strong>) [<strong>CCF-A</strong>]</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2502.09723" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="https://github.com/horizonsinzqs/QueryAttack" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title">Interaction2Code: Benchmarking MLLM-based Interactive Webpage Code Generation from Interactive Prototyping</div>
+          <div class="pub-authors">Jingyu Xiao, Yuxuan Wan, Yintong Huo, Zixin Wang, Xinyi Xu, Wenxuan Wang, Zhiyao Xu, <span class="pub-me">Yuhang Wang</span>, Michael R. Lyu.</div>
+          <div class="pub-venue">40th IEEE/ACM International Conference on Automated Software Engineering (<strong>ASE 2025</strong>, 9.5%) [<strong>CCF-A</strong>]</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2411.03292" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="https://github.com/WebPAI/Interaction2Code" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title">SlideCoder: Layout-aware RAG-enhanced Hierarchical Slide Generation from Design</div>
+          <div class="pub-authors">Wenxin Tang, Jingyu Xiao, Wenxuan Jiang, <span class="pub-me">Yuhang Wang</span>, Xi Xiao, Xuxin Tang, Qing Li, Yuehe Ma, Michael Lyu.</div>
+          <div class="pub-venue">The 2025 Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP 2025 Main, Oral</strong>) [<strong>CCF-B</strong>]</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2506.07964" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="https://github.com/vinsontang2126/SlideCoder" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+        <li>
+          <div class="pub-title">Open-World 3D Scene Understanding with Cross-Modal Dual Consistency Learning (DCL-OW3D)</div>
+          <div class="pub-authors">Xian-Feng Han, Chuyu Wang, <span class="pub-me">Yuhang Wang</span>,Mingjie Wang.</div>
+          <div class="pub-venue">ACM International Conference on Multimedia Retrieval (<strong>ICMR 2025</strong>) [<strong>CCF-B</strong>] [Student First Author]</div>
+          <div class="pub-links">
+            <a href="https://www.semanticscholar.org/paper/Open-World-3D-Scene-Understanding-with-Cross-Modal-Han-Wang/476ce11af1aa3fb7a683a7b14469bf89c1dde66e" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2><i class="fas fa-laptop-code"></i> Projects &amp; Competitions</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <div class="project-header">
+            <h3>IoT Smart Agriculture Management System</h3>
+            <span class="project-badge">National 3rd Prize / Chongqing 1st Prize</span>
+          </div>
+          <p class="project-date">2025.03 – 2025.04 | Chinasoft International Project Internship</p>
+          <p>Built a full-stack smart agriculture system with real-time data visualization, scalable device control, and AI4IoT modules. Served as <strong>team leader</strong> overseeing the entire development lifecycle.</p>
+          <p class="project-tech"><strong>Tech stack:</strong> WeChat Mini Program, Python + FastAPI, LangChain, MQTT, C++ (HiBurn), WebSocket</p>
+        </div>
+        <div class="project-item">
+          <div class="project-header">
+            <h3>AI-Powered Military Wargame Board Generation</h3>
+            <span class="project-badge">National Innovation Project</span>
+          </div>
+          <p class="project-date">2024.08 – Present</p>
+          <p>Designed an end-to-end text-to-2D wargame board generation pipeline using Stable Diffusion. First work to achieve text-to-wargame-board 2D image generation.</p>
+          <p class="project-tech"><strong>Tech stack:</strong> Stable Diffusion, Python, Deep Learning</p>
+        </div>
+        <div class="project-item">
+          <div class="project-header">
+            <h3>National College Student Intelligent Vehicle Competition</h3>
+            <span class="project-badge">National 2nd Prize / Chongqing 1st Prize</span>
+          </div>
+          <p class="project-date">2023.12</p>
+          <p>Built a CV + LLM-based intelligent delivery vehicle for the "last-mile" delivery problem. Responsible for chassis design, battery selection, and LLM integration.</p>
+          <p class="project-tech"><strong>Tech stack:</strong> Computer Vision, LLM, Embedded Systems</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section">
+      <h2><i class="fas fa-star"></i> Selected Awards &amp; Honors</h2>
+      <div class="awards-grid">
+        <div class="award-category">
+          <h3><i class="fas fa-medal"></i> Scholarships</h3>
+          <ul>
+            <li><strong>National Scholarship</strong>, Ministry of Education of China (2 times)</li>
+            <li>Grateful for Chinese Modern Scientists Scholarship (感恩中国近现代科学家奖学金)</li>
+            <li>Southwest University First-class Scholarship</li>
+          </ul>
+        </div>
+        <div class="award-category">
+          <h3><i class="fas fa-trophy"></i> Honors</h3>
+          <ul>
+            <li><strong>Chongqing Spiritual Civilization Advanced Individual</strong> (重庆市精神文明先进个人)</li>
+            <li>Southwest University Merit Student (三好学生)</li>
+            <li>SWU Academic Excellence Award (学习优秀奖)</li>
+            <li>SWU Overseas Study Award (国(境)外研学奖)</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Last updated: March 2026</p>
+      <p>&copy; 2026 Yuhang Wang. Powered by GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('show'));
+    });
+  </script>
+</body>
+</html>
